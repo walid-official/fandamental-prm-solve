@@ -125,10 +125,11 @@
 // let str = "I am learning Programming to become a programmer";
 // let splitStr = str.split(" ");
 // let convertMath = Math.max(splitStr[0].length,splitStr[1].length,splitStr[2].length,splitStr[3].length,splitStr[4].length,splitStr[5].length,splitStr[6].length,splitStr[7].length);
-// maxStr(splitStr,convertMath)
+// maxStr(splitStr,convertMath);
 
 
 
+// Task-6
+//******************************************************************/
 
-// let convertMath = Math.max(splitStr[0].length,splitStr[1].length,splitStr[2].length,splitStr[3].length,splitStr[4].length,splitStr[5].length,splitStr[6].length,splitStr[7].length);
-// console.log(convertMath)
+console.log(Math.round(Math.random() * 10 + 10));
