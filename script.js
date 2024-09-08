@@ -127,20 +127,20 @@
 // let convertMath = Math.max(splitStr[0].length,splitStr[1].length,splitStr[2].length,splitStr[3].length,splitStr[4].length,splitStr[5].length,splitStr[6].length,splitStr[7].length);
 // maxStr(splitStr,convertMath);
 
-function maxStr(maximum){
-    let max = maximum[0];
-  for(let item of maximum){
-    if(max.length < item.length){
-        max = item;
-    }
-  }
-  return max;
-}
+// function maxStr(maximum){
+//     let max = maximum[0];
+//   for(let item of maximum){
+//     if(max.length < item.length){
+//         max = item;
+//     }
+//   }
+//   return max;
+// }
  
- let str = "I am learning Programming to become a programmer";
- let splitStr = str.split(" ");
- let convertMath = splitStr;
-console.log(maxStr(convertMath));
+//  let str = "I am learning Programming to become a programmer";
+//  let splitStr = str.split(" ");
+//  let convertMath = splitStr;
+// console.log(maxStr(convertMath));
 
 
 
@@ -197,3 +197,49 @@ console.log(maxStr(convertMath));
    
 // }
 // console.log(compareLen);
+
+// Task-9
+//******************************************************************/
+
+
+// function calculateElectronicsBudget(quantity){
+//    let laptop = 35000;
+//    let tablet = 15000;
+//    let mobile = 20000;
+//    let laptopPrice = laptop * quantity;
+//    let tabletPrice = tablet * quantity;
+//    let mobilePrice = mobile * quantity;
+//    let amount = laptopPrice + tabletPrice + mobilePrice;
+//    return amount
+// }
+// console.log(calculateElectronicsBudget(5));
+
+
+
+// Task-10
+//******************************************************************/
+
+const phones = [
+    { model: "PhoneA", brand: "Iphone", price: 95000 },
+    { model: "PhoneB", brand: "Samsung", price: 40000 },
+    { model: "PhoneC", brand: "Oppo", price: 26000 },
+    { model: "PhoneD", brand: "Nokia", price: 35000 },
+    { model: "PhoneE", brand: "Iphone", price: 105000 },
+    { model: "PhoneF", brand: "HTC", price: 48000 },
+];
+
+function findAveragePhonePrice(phone){
+    let sum = 0;
+    let aver = [];
+    for(const items of phone){
+       sum += items["price"];
+    }
+    for(const price of phone){
+        aver.push(price.price);
+    }
+    let result = Math.round(sum / aver.length);
+    return result;
+}
+
+const itemStor = findAveragePhonePrice(phones);
+console.log(itemStor);
