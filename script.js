@@ -129,7 +129,44 @@
 
 
 
+
+
+
+
+
 // Task-6
 //******************************************************************/
 
-console.log(Math.round(Math.random() * 10 + 10));
+// console.log(Math.round(Math.random() * 10 + 10));
+
+// Task-6
+//******************************************************************/
+
+// function findLargeWord(maximum){
+//     console.log(maximum.length[0]);
+//     // for(let num of maximum){
+//     //     console.log(num.length)
+//     // }
+//     // return max;
+// }
+
+// let str = "I am learning Programming to become a programmer";
+// let splitStr = str.split(" ");
+// console.log(findLargeWord(splitStr));
+
+
+
+// Task-7
+//******************************************************************/
+
+function mini(numbers){
+    let minimum = numbers[0];
+    for(let num of numbers){
+        if(minimum > num){
+            minimum = num;
+        }
+    }
+    return minimum;
+}
+let miniNumbers = [20,30,49,60,80,10];
+console.log(mini(miniNumbers));
