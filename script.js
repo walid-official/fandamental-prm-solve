@@ -127,8 +127,20 @@
 // let convertMath = Math.max(splitStr[0].length,splitStr[1].length,splitStr[2].length,splitStr[3].length,splitStr[4].length,splitStr[5].length,splitStr[6].length,splitStr[7].length);
 // maxStr(splitStr,convertMath);
 
-
-
+function maxStr(maximum){
+    let max = maximum[0];
+  for(let item of maximum){
+    if(max.length < item.length){
+        max = item;
+    }
+  }
+  return max;
+}
+ 
+ let str = "I am learning Programming to become a programmer";
+ let splitStr = str.split(" ");
+ let convertMath = splitStr;
+console.log(maxStr(convertMath));
 
 
 
@@ -159,14 +171,29 @@
 // Task-7
 //******************************************************************/
 
-function mini(numbers){
-    let minimum = numbers[0];
-    for(let num of numbers){
-        if(minimum > num){
-            minimum = num;
-        }
-    }
-    return minimum;
-}
-let miniNumbers = [20,30,49,60,80,10];
-console.log(mini(miniNumbers));
+// function mini(numbers){
+//     let minimum = numbers[0];
+//     for(let num of numbers){
+//         if(minimum > num){
+//             minimum = num;
+//         }
+//     }
+//     return minimum;
+// }
+// let miniNumbers = [20,30,49,60,80,10];
+// console.log(mini(miniNumbers));
+
+
+// Task-8
+//******************************************************************/
+
+// const heights2 = ['rahim', 'robin', 'rafi', 'ron',  'rashed'];
+
+// let compareLen = heights2[0];
+// for(let num of heights2){
+//     if(compareLen.length > num.length){
+//         compareLen = num;
+//     }
+   
+// }
+// console.log(compareLen);
